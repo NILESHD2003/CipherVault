@@ -1,5 +1,5 @@
 import React from "react";
-import { Shield, Lock, Key, ShieldCheck, CodeXml } from "lucide-react";
+import { Shield, Lock, Key, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -105,7 +105,7 @@ function Index(): React.JSX.Element {
           <p>&copy; 2025 <span className="text-blue-500 font-semibold">CipherVault</span>. All rights reserved.</p>
         </div>
         <div className="flex justify-center gap-2">
-          <CodeXml className="text-blue-500"></CodeXml>
+          {/* <CodeXml className="text-blue-500"></CodeXml> */}
           <p>Crafted by <Link to='https://nileshdeshpande.me'><span className="text-blue-500 font-semibold">Nilesh Deshpande</span></Link></p>
         </div>
       </footer>

@@ -6,7 +6,7 @@ import Signup from './pages/Signup'
 
 function App(): React.JSX.Element {
   return (
-    <div className='min-h-screen not-dark:bg-gray-50 max-w-7xl mx-auto'>
+    <div className='min-h-screen not-dark:bg-gray-50 max-w-8xl mx-auto'>
       <Routes>
         <Route path='/' element={<Index />}></Route>
         <Route path='/login' element={<Login />}></Route>
