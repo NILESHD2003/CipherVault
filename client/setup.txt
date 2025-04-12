@@ -1,0 +1,11 @@
+npx snarkjs powersoftau new bn128 12 pot12_0000.ptau -v
+
+npx snarkjs powersoftau contribute pot12_0000.ptau pot12_0001.ptau --name="<ENTER NAME>" -v
+
+npx snarkjs powersoftau prepare phase2 pot12_0001.ptau pot12_final.ptau -v
+
+npx snarkjs groth16 setup auth.r1cs pot12_final.ptau circuit_0000.zkey
+
+npx snarkjs zkey contribute circuit_0000.zkey circuit_final.zkey --name="<Enter Contribution Name>" -v
+
+npx snarkjs zkey export verificationkey circuit_final.zkey verification_key.json
